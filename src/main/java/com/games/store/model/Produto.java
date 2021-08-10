@@ -13,7 +13,7 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table( name = "tb_produtos" )
+@Table( name = "tb_produto" )
 public class Produto {
 	
 	@Id
@@ -29,7 +29,7 @@ public class Produto {
 	private Double preco;
 	
 	@ManyToOne
-	@JsonIgnoreProperties("tb_produtos")
+	@JsonIgnoreProperties("produto")
 	private Categoria categoria;
 	
 	

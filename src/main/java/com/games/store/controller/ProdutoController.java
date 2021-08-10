@@ -24,7 +24,7 @@ import com.games.store.repository.ProdutoRepository;
 
 @RestController
 @RequestMapping("/produto")
-@CrossOrigin("*")
+@CrossOrigin( origins = "*", allowedHeaders = "*")
 public class ProdutoController {
 
 	@Autowired
